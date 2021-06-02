@@ -7,6 +7,6 @@ build:
       - pipenv install
 run:
   runtime-version: 3.8
-  command: gunicorn app:app --log-file - 
+  command: pipenv run gunicorn app:app --log-file - 
   network: 
     port: 8000
